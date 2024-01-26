@@ -102,5 +102,31 @@
   echo ($number_two . " has changed his value to " . gettype($number_two)); // 0 has changed his value to boolean
   ```
 
-- Create a function that receives two numbers as parameters and returns the sum of them. Print
-  on screen and by console the result
+- Create a function that receives two numbers as parameters and returns the sum of them. Print on screen and by console the result
+
+  ```php
+  $orange_price = 20;
+  $apple_price = 10;
+
+  function getSum($orange_price, $apple_price)
+  {
+    $fruit_sum = $orange_price + $apple_price;
+    return $fruit_sum;
+  };
+
+  $fruit_addition = getSum($orange_price, $apple_price);
+
+  echo ("I spent buying fruits " . $fruit_addition . " euros"); // I spent buying fruits 30 euros
+  ```
+
+- Create a function that determines whether a number is odd or even. Print to console and screen
+
+```php
+  $number = 24;
+
+  if (($number % 2) == 0) {
+    echo "The number is even";
+  } else {
+    echo "The number is odd";
+  }; // The number is even
+```

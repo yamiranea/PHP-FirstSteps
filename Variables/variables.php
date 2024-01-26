@@ -137,3 +137,27 @@ echo ($number_one . " has changed his value to " . gettype($number_one) . "\n ")
 echo ($number_two . " has changed his value to " . gettype($number_two) . "\n ");
 
 // Create a function that receives two numbers as parameters and returns the sum of them. Print on screen and by console the result.
+
+$orange_price = 20;
+$apple_price = 10;
+
+function getSum($orange_price, $apple_price)
+{
+    $fruit_sum = $orange_price + $apple_price;
+    return $fruit_sum;
+};
+
+$fruit_addition = getSum($orange_price, $apple_price);
+
+
+echo ("I spent buying fruits " . $fruit_addition . " euros" . "\n ");
+
+// Create a function that determines whether a number is odd or even. Print to console and screen
+
+$number = 24;
+
+if (($number % 2) == 0) {
+    echo "The number is even";
+} else {
+    echo "The number is odd";
+};
