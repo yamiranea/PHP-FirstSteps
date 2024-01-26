@@ -96,12 +96,44 @@ $he_can_fly = false;
 $he_has_2_legs = false;
 
 var_dump($is_a_big_cat && $he_likes_to_eat);
-echo "\n <br>";
+echo "\n ";
 var_dump($is_a_big_cat || $he_can_fly);
-echo "\n <br>";
+echo "\n ";
 var_dump($he_can_fly || $he_has_2_legs);
-echo "\n <br>";
+echo "\n ";
 var_dump(!$he_likes_to_eat);
-echo "\n <br>";
+echo "\n ";
 var_dump(!$he_likes_to_eat || $is_a_big_cat);
-echo "\n <br>";
+echo "\n ";
+
+// Declare two variables and give them an integer value and print both on the screen
+$current_year = 2024;
+$past_year = 2023;
+
+
+var_dump($current_year);
+echo "\n ";
+var_dump($past_year);
+echo "\n ";
+
+// Sums both integer variables and prints on the screen.
+echo ("If we add our years variables the result is "  . $current_year + $past_year);
+echo "\n ";
+
+// Declare two variables and give them a value of 1 and 0 type integer and print the data type on the screen and console.
+$number_one = 1;
+$number_two = 0;
+
+var_dump($number_one);
+echo "\n ";
+var_dump($number_two);
+
+// Change the data type of the previous variables to Boolean and print the new data type on the screen and console.
+
+$number_one = true;
+$number_two = false;
+
+echo ($number_one . " has changed his value to " . gettype($number_one) . "\n ");
+echo ($number_two . " has changed his value to " . gettype($number_two) . "\n ");
+
+// Create a function that receives two numbers as parameters and returns the sum of them. Print on screen and by console the result.
